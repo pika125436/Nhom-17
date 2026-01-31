@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomShop - Cửa Hàng Hoa Tươi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-spa"></i>
+                    <h1>Bloom<span>Shop</span></h1>
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="#categories">Danh mục</a></li>
+                    <li><a href="#team-member">Thành viên</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <!-- Thay icon search bằng liên kết đến trang sản phẩm -->
+                <a href="products.html" style="color: inherit; text-decoration: none;">
+                    <i class="fas fa-search"></i>
+                </a>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Hoa Tươi - Trao Gửi Yêu Thương</h2>
+            <p>Khám phá bộ sưu tập hoa tươi đa dạng và độc đáo tại BloomShop. Chúng tôi mang đến những bó hoa đẹp nhất, tươi nhất cho mọi dịp đặc biệt của bạn.</p>
+            <a href="products.html" class="btn">Xem Sản Phẩm</a>
+        </div>
+    </section>
+
+    <!-- Danh mục sản phẩm -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Danh Mục Hoa</h2>
+                <p>Khám phá các loại hoa theo danh mục yêu thích của bạn</p>
+            </div>
+            
+            <div class="categories">
+                <div class="category-card">
+                    <img src="img/sn1.jpg" alt="Hoa sinh nhật">
+                    <h3>Hoa Sinh Nhật</h3>
+                    <p>Những bó hoa tươi thắm nhất dành tặng người thân yêu</p>
+                </div>
+                
+                <div class="category-card">
+                    <img src="img/cuoi1.jpg" alt="Hoa cưới">
+                    <h3>Hoa Cưới</h3>
+                    <p>Bó hoa cô dâu lộng lẫy và vòng hoa trang trí tiệc cưới</p>
+                </div>
+                
+                <div class="category-card">
+                    <img src="img/kt1.jpg" alt="Hoa khai trương">
+                    <h3>Hoa Khai Trương</h3>
+                    <p>Chúc mừng thành công với những kệ hoa sang trọng</p>
+                </div>
+                
+                <div class="category-card">
+                    <img src="img/ty1.jpg" alt="Hoa tình yêu">
+                    <h3>Hoa Tình Yêu</h3>
+                    <p>Trao gửi yêu thương với những đóa hoa lãng mạn nhất</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản phẩm nổi bật -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sản Phẩm Nổi Bật</h2>
+                <p>Những mẫu hoa được yêu thích nhất tại BloomShop</p>
+            </div>
+            
+            <div class="products">
+                <!-- Sản phẩm 1 -->
+<div class="product-card">
+    <div class="product-img">
+        <img src="img/hh1.jpg" alt="Bó hoa hồng đỏ">
+    </div>
+    <div class="product-info">
+        <h3>Bó Hoa Hồng Đỏ</h3>
+        <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="product-price">350.000 VNĐ</p>
+        <div class="product-buttons">
+            <a href="product-detail.html?id=1" class="btn">Xem Chi Tiết</a>
+            <button class="btn buy-now-btn" data-id="1" data-name="Bó Hoa Hồng Đỏ" data-price="350000">Mua ngay</button>
+        </div>
+    </div>
+</div>
+                
+                <!-- Sản phẩm 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/cch1.jpg" alt="Hoa cẩm chướng">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hoa Cẩm Chướng</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="product-price">280.000 VNĐ</p>
+                        <div class="product-buttons">
+                        <a href="product-detail.html?id=2" class="btn">Xem Chi Tiết</a>
+                        <button class="btn buy-now-btn" data-id="2" data-name="Hoa Cẩm Chướng" data-price="280000">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/tulip1.jpg" alt="Hoa tulip">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hoa Tulip Hồng</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="product-price">420.000 VNĐ</p>
+                        <div class="product-buttons">
+                        <a href="product-detail.html?id=3" class="btn">Xem Chi Tiết</a>
+                        <button class="btn buy-now-btn" data-id="3" data-name="Hoa Tulip Hồng" data-price="420000">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/lan1.jpg" alt="Hoa lan">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hoa Lan Trắng</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product-price">550.000 VNĐ</p>
+                        <div class="product-buttons">
+                        <a href="product-detail.html?id=4" class="btn">Xem Chi Tiết</a>
+                        <button class="btn buy-now-btn" data-id="4" data-name="Hoa Lan Trắng" data-price="550000">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="products.html" class="btn" style="background-color: #2d5a27;">Xem Tất Cả Sản Phẩm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thành viên (thay thế phần Giới thiệu) -->
+    <section class="about" id="team-member">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Thành Viên Của Chúng Tôi</h2>
+                    <h3 style="color: #e91e63; margin-bottom: 15px;">Bùi Thị Phương Thanh - Trưởng Nhóm</h3>
+                    
+                    <div class="member-info" style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #e91e63;">
+                        <p style="margin-bottom: 10px;"><strong>Kinh nghiệm:</strong> 10 năm trong ngành hoa tươi</p>
+                        <p style="margin-bottom: 10px;"><strong>Chuyên môn:</strong> Thiết kế hoa cưới, hoa sự kiện</p>
+                        <p style="margin-bottom: 10px;"><strong>Chứng chỉ:</strong> Chứng chỉ Florist Quốc tế từ Hà Lan</p>
+                    </div>
+                    
+                    <p>Với niềm đam mê bất tận với hoa và nghệ thuật cắm hoa, Thanh đã thành lập BloomShop từ năm 2015. Chị tốt nghiệp ngành Công nghệ Sinh học và có bằng chuyên gia thiết kế hoa từ Học viện Boerma Instituut (Hà Lan).</p>
+                    <p>Chị Thanh luôn tâm niệm: "Mỗi bó hoa không chỉ là sản phẩm, mà còn là một câu chuyện, một thông điệp mà người tặng muốn gửi gắm. Chúng tôi ở đây để biến những cảm xúc ấy thành những tác phẩm nghệ thuật bằng hoa."</p>
+                    <p>Với hơn 10 năm kinh nghiệm, chị đã thiết kế hoa cho hơn 500 đám cưới và hàng nghìn sự kiện đặc biệt. Mỗi tác phẩm của chị đều mang dấu ấn riêng, sự tinh tế và tính nghệ thuật cao.</p>
+                    
+                    <div class="member-contact" style="background-color: #f9f7f7; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                        <h4 style="color: #2d5a27; margin-bottom: 10px;">Liên hệ trực tiếp với chuyên gia:</h4>
+                        <p style="margin-bottom: 5px;"><i class="fas fa-phone" style="color: #e91e63; margin-right: 10px;"></i> 0901 234 567</p>
+                        <p style="margin-bottom: 5px;"><i class="fas fa-envelope" style="color: #e91e63; margin-right: 10px;"></i> Buipthanh.@bloomshop.vn</p>
+                        <p><i class="fas fa-clock" style="color: #e91e63; margin-right: 10px;"></i> Tư vấn: 9:00 - 18:00 (T2 - T6)</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/anhtv.jpg" alt="Bùi Thị Phương Thanh">
+                    <div style="text-align: center; margin-top: 15px; font-style: italic; color: #666;">
+                        Bùi Thị Phương Thanh - Trưởng Nhóm
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BloomShop</h3>
+                    <p>Cửa hàng hoa tươi với hơn 8 năm kinh nghiệm trong ngành. Chúng tôi cam kết mang đến những sản phẩm hoa chất lượng nhất.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Đường Hoa Hồng, Quận 1, TP.HCM</p>
+                    <p><i class="fas fa-phone"></i> (028) 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i><a href="https://www.facebook.com/bdi.edu.vn" target="_blank">Trường Trung cấp công nghiệp Bình Dương</a></p>
+                    <p><i class="fas fa-clock"></i> Mở cửa: 8:00 - 21:00 (T2 - CN)</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Danh Mục</h3>
+                    <a href="#categories">Hoa Sinh Nhật</a>
+                    <a href="#categories">Hoa Cưới</a>
+                    <a href="#categories">Hoa Khai Trương</a>
+                    <a href="#categories">Hoa Tình Yêu</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Đăng Ký Nhận Tin</h3>
+                    <p>Đăng ký để nhận thông tin về khuyến mãi và sản phẩm mới từ BloomShop.</p>
+                    <div style="margin-top: 15px;">
+                        <input type="email" placeholder="Email của bạn" style="padding: 10px; width: 100%; border-radius: 5px; border: none; margin-bottom: 10px;">
+                        <button class="btn" style="width: 100%;">Đăng Ký</button>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.8312632695925!2d106.73750307586951!3d10.900425156892586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d83c1116183d%3A0xfa754495eeb43247!2zVHLGsOG7nW5nIFRydW5nIEPhuqVwIEPDtG5nIE5naGnhu4dwIELDrG5oIETGsMahbmc!5e0!3m2!1svi!2s!4v1769347072500!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 BloomShop. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal giỏ hàng -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Giỏ Hàng Của Bạn</h2>
+                <span class="close-cart" id="closeCart">&times;</span>
+            </div>
+            
+            <div class="cart-items" id="cartItems">
+                <!-- Các sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+                <div class="cart-empty" id="cartEmpty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Giỏ hàng của bạn đang trống</p>
+                </div>
+            </div>
+            
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <span>Tổng tiền:</span>
+                <span id="totalAmount">0 VNĐ</span>
+            </div>
+            
+            <button class="btn" id="checkoutBtn" style="width: 100%; display: none;">Thanh Toán</button>
+        </div>
+    </div>
+    <div class="auth-modal" id="authModal">
+    <div class="auth-content">
+        <div class="auth-header">
+            <h2 id="authTitle">Đăng Nhập</h2>
+            <span class="close-auth" id="closeAuth">&times;</span>
+        </div>
+        
+        <div class="auth-tabs">
+            <button class="auth-tab active" id="loginTab">Đăng Nhập</button>
+            <button class="auth-tab" id="registerTab">Đăng Ký</button>
+        </div>
+        
+        <!-- Form đăng nhập -->
+        <form id="loginForm" class="auth-form active">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="Nhập email của bạn" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="loginPassword">Mật khẩu</label>
+                <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
+                <div class="password-toggle">
+                    <i class="fas fa-eye" id="toggleLoginPassword"></i>
+                </div>
+            </div>
+            
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <span>Ghi nhớ đăng nhập</span>
+                </label>
+                <a href="#" class="forgot-password">Quên mật khẩu?</a>
+            </div>
+            
+            <button type="submit" class="btn auth-btn">Đăng Nhập</button>
+            
+            <div class="auth-divider">
+                <span>Hoặc đăng nhập với</span>
+            </div>
+            
+            <div class="social-login">
+                <button type="button" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <button type="button" class="social-btn google">
+                    <i class="fab fa-google"></i> Google
+                </button>
+            </div>
+        </form>
+        
+        <!-- Form đăng ký -->
+        <form id="registerForm" class="auth-form">
+            <div class="form-group">
+                <label for="registerName">Họ và tên</label>
+                <input type="text" id="registerName" placeholder="Nhập họ và tên" required>
+            </div>
+            <div class="form-group">
+                <label for="registerUsername">Tên đăng nhập</label>
+                <input type="text" id="registerUsername" placeholder="Chọn tên đăng nhập (3-20 ký tự)" required>
+            </div>
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" placeholder="Nhập email của bạn" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerPhone">Số điện thoại</label>
+                <input type="tel" id="registerPhone" placeholder="Nhập số điện thoại" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerPassword">Mật khẩu</label>
+                <input type="password" id="registerPassword" placeholder="Nhập mật khẩu (ít nhất 6 ký tự)" required>
+                <div class="password-toggle">
+                    <i class="fas fa-eye" id="toggleRegisterPassword"></i>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Xác nhận mật khẩu</label>
+                <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                <div class="password-toggle">
+                    <i class="fas fa-eye" id="toggleConfirmPassword"></i>
+                </div>
+            </div>
+            
+            <div class="form-options">
+                <label class="terms-check">
+                    <input type="checkbox" id="acceptTerms" required>
+                    <span>Tôi đồng ý với <a href="#">điều khoản dịch vụ</a> và <a href="#">chính sách bảo mật</a></span>
+                </label>
+            </div>
+            
+            <button type="submit" class="btn auth-btn">Đăng Ký</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal thông báo -->
+<div class="notification-modal" id="notificationModal">
+    <div class="notification-content">
+        <div class="notification-icon">
+            <i class="fas fa-check-circle" id="notificationIcon"></i>
+        </div>
+        <h3 id="notificationTitle">Thành công</h3>
+        <p id="notificationMessage">Đăng nhập thành công!</p>
+        <button class="btn" id="notificationClose">OK</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
